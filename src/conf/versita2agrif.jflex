@@ -96,6 +96,7 @@ import net.zettadata.generator.tools.ToolboxException;
 	
 	"<article>"
 	{
+		System.out.println( "<article>" ) ;
 		agrifs = new ArrayList<Agrif>() ;
 		init() ;
 		yybegin( AGRIF ) ;
@@ -237,7 +238,9 @@ import net.zettadata.generator.tools.ToolboxException;
 	}
 	
 	"<title>Abstract</title>" {}
-	"<p>"|"</p>" {} 
+	"<p>"|"</p>" {}
+	"<italic>"|"</italic>" {}
+	"<sub>"|"</sub>" {}
 	
 	\r|\t {}
 	
